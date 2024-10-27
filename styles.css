@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-    font-size: 3vw;
+    font-size: 3.5rem;
     font-family: 'BahnSchrift', sans-serif;
     font-weight: bold;
     color: #075e54;
@@ -52,7 +52,7 @@ body {
 }
 
 .description {
-    font-size: 2vw;
+    font-size: 2rem;
     font-family: 'BahnSchrift', sans-serif;
     font-weight: regular;
     display: flex;
@@ -72,7 +72,7 @@ body {
 
 .divider {
     border: none;
-    border-top: 0.2vw solid #000000;
+    border-top: 0.2rem solid #000000;
     margin-top: -0.2%;
 }
 
@@ -82,13 +82,12 @@ body {
     /* Ensures all cards have the same height */
     justify-content: center;
     gap: 5%;
-    /* Adjusts space between cards */
     margin-top: 2%;
     margin-bottom: 5%;
 }
 
 .text-start {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     text-align: left;
     font-family: 'BahnSchrift', sans-serif;
     font-weight: regular;
@@ -99,13 +98,12 @@ body {
 .card-custom {
     flex: 1;
     /* Allows the card to grow and fill available space */
-    min-height: 30%;
+    min-height: 100%;
     /* Sets a minimum height to ensure consistency */
     border-radius: 30px;
     background-color: #003d3d;
     color: #d4ffca;
     text-align: center;
-    padding: 20px;
 }
 
 .btn-custom {
@@ -119,7 +117,7 @@ body {
 }
 
 .signup {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     font-family: 'BahnSchrift', sans-serif;
     font-weight: regular;
     color: #003d3d;
@@ -127,7 +125,7 @@ body {
 }
 
 .offer-card-title {
-    font-size: 2vw;
+    font-size: 2rem;
     text-align: left;
     font-family: 'BahnSchrift', sans-serif;
     font-weight: regular;
@@ -137,15 +135,14 @@ body {
 
 .testimonial-cards {
     display: flex;
-    align-items: stretch;
-    /* Ensures all cards have the same height */
+    align-items: center;
     justify-content: center;
     margin-top: 2%;
     margin-bottom: 5%;
 }
 
 .testimonial-card-rating {
-    font-size: 2vw;
+    font-size: 2rem;
     text-align: center;
     font-family: 'BahnSchrift', sans-serif;
     font-weight: regular;
@@ -154,7 +151,7 @@ body {
 }
 
 .testimonial {
-    font-size: 2vw;
+    font-size: 3rem;
     text-align: center;
     font-family: 'BahnSchrift', sans-serif;
     font-weight: regular;
@@ -163,7 +160,7 @@ body {
 }
 
 .testimonial-owner {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     text-align: right;
     font-style: italic;
     font-family: 'BahnSchrift', sans-serif;
@@ -172,9 +169,15 @@ body {
     margin-bottom: 2%;
 }
 
+.card-custom-testimonial {
+    border-radius: 30px;
+    background-color: #003d3d;
+    color: #d4ffca;
+    text-align: center;
+}
 
 .price-info {
-    font-size: 3vw;
+    font-size: 3rem;
     font-family: 'BahnSchrift', sans-serif;
     font-weight: regular;
     color: #d4ffca;
@@ -190,7 +193,7 @@ body {
     background-color: #f5f0e8;
     font-family: 'BahnSchrift', sans-serif;
     color: #2c473e;
-    font-size: 1.5vw;
+    font-size: 2rem;
     border: none;
     /* Remove default border */
     border-bottom: 1px solid #cccccc;
@@ -199,7 +202,7 @@ body {
 
 .accordion-button {
     color: #2c473e;
-    font-size: 1.5vw;
+    font-size: 2rem;
     font-family: 'BahnSchrift', sans-serif;
     font-weight: bold;
     background-color: #f5f0e8;
@@ -258,7 +261,7 @@ body {
 }
 
 #product-title {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     font-family: 'BahnSchrift', sans-serif;
     font-weight: regular;
     color: #000000;
@@ -266,7 +269,7 @@ body {
 }
 
 #payment-header {
-    font-size: 3vw;
+    font-size: 3rem;
     font-family: 'BahnSchrift', sans-serif;
     font-weight: regular;
     color: #075e54;
@@ -274,15 +277,152 @@ body {
 }
 
 #testimonial-header {
-    font-size: 3vw;
+    font-size: 3rem;
     font-family: 'BahnSchrift', sans-serif;
     font-weight: bold;
     color: #075e54;
 }
 
 #faq-header {
-    font-size: 3vw;
+    font-size: 3rem;
     font-family: 'BahnSchrift', sans-serif;
     font-weight: bold;
     color: #075e54;
+}
+
+/* Media query for screens smaller than 1366px and bigger than 768px*/
+@media (max-width: 1366px) and (min-width: 768px) {
+    .testimonial-card-rating {
+        font-size: 1.4rem;
+    }
+
+    .testimonial {
+        font-size: 2.2rem;
+    }
+
+    .testimonial-owner {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-card {
+        margin: 1%;
+    }
+}
+
+
+
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media (max-width: 768px) {
+    .phone-container {
+        flex-direction: column;
+        /* Stacks images vertically */
+        align-items: center;
+        /* Centers images horizontally */
+    }
+
+    #left_phone {
+        width: 80%;
+        /* Decreased width for smaller screens */
+        padding-left: 0%;
+    }
+
+    #right_phone {
+        width: 80%;
+        /* Decreased width for smaller screens */
+        padding-right: 0%;
+    }
+
+    #title {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .reminder-section {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .payment-section {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 10%;
+    }
+
+    .testimonial-section {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .faq-section {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .header {
+        font-size: 2.2rem;
+    }
+
+    #payment-header {
+        font-size: 2.2rem;
+    }
+
+    #testimonial-header {
+        font-size: 2.2rem;
+    }
+    
+    #faq-header {
+        font-size: 2.2rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+
+    .offer-card-title {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-card-rating {
+        font-size: 1.5rem;
+    }
+
+    .testimonial {
+        font-size: 2rem;
+    }
+
+    .testimonial-owner {
+        font-size: 1.2rem;
+    }
+
+    .price-info {
+        font-size: 2.5rem;
+    }
+
+    .btn-custom {
+        min-width: 50%;
+    }
+
+    .signup {
+        font-size: 1.2rem;
+    }
+
+    .text-start {
+        font-size: 1.2rem;
+    }
+
+    .accordion-item {
+        font-size: 1.5rem;
+    }
+
+    .accordion-button {
+        font-size: 1.5rem;
+    }
+
+    .accordion-body {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-card {
+        margin: 2%;
+    }
 }
