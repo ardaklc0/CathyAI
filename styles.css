@@ -1,3 +1,8 @@
+ @font-face {
+    font-family: 'BahnSchrift';
+    src: url('/assets/BahnSchrift.ttf') format('truetype');
+ }
+
 body {
     background-color: #f5f0e8;
     display: flex;
