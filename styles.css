@@ -1,6 +1,10 @@
  @font-face {
     font-family: 'BahnSchrift';
+<<<<<<< HEAD
     src: url('/assets/BahnSchrift.ttf') format('truetype');
+=======
+    src: url('BahnSchrift.ttf') format('truetype');
+>>>>>>> b911e0e06e8a73fe0ffdd7e0559770fb1666ee8c
  }
 
 body {
