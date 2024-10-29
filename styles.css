@@ -295,7 +295,6 @@ body {
 }
 
 
-
 /* Media query for screens smaller than 768px (adjust as needed) */
 @media (max-width: 768px) {
     .phone-container {
@@ -304,11 +303,7 @@ body {
         align-items: center;
         /* Centers images horizontally */
     }
-
-    .card-custom {
-        margin-bottom: 5%;
-    }
-
+    
     #left_phone {
         width: 80%;
         /* Decreased width for smaller screens */
@@ -334,12 +329,12 @@ body {
     .payment-section {
         margin-left: 2%;
         margin-right: 2%;
-        margin-bottom: 10%;
     }
 
     .testimonial-section {
         margin-left: 2%;
         margin-right: 2%;
+        margin-top: 5%;
     }
 
     .faq-section {
