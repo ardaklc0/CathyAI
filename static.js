@@ -12,3 +12,15 @@ $(document).ready(function() {
         $('#left_phone').hide();
     }
 });
+// if "About is clicked" then scroll to "Need a reminder" section. Code it in the static.js file.
+$('#about').click(function() {
+    $('html, body').animate({
+        scrollTop: $('.reminder-section').offset().top
+    }, 100);
+});
+
+$('#pricing').click(function() {
+    $('html, body').animate({
+        scrollTop: $('.payment-section').offset().top
+    }, 100);
+});
