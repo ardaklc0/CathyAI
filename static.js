@@ -11,6 +11,15 @@ $(document).ready(function() {
         //hide second phone
         $('#left_phone').hide();
     }
+    // var docWidth = document.documentElement.offsetWidth;
+    // [].forEach.call(
+    // document.querySelectorAll('*'),
+    // function(el) {
+    //     if (el.offsetWidth > docWidth) {
+    //     console.log(el);
+    //     }
+    // }
+    // );
 });
 
 $('#about').click(function() {

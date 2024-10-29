@@ -2,6 +2,7 @@ body {
     background-color: #f5f0e8;
     display: flex;
     height: 100vh;
+    overflow-x: hidden;
     flex-direction: column;
     /* Stacks header and phone container vertically */
 }
@@ -74,14 +75,21 @@ body {
     margin-top: -0.2%;
 }
 
+.offer-cards, .testimonial-cards {
+    margin: 0;
+}
+
 .offer-cards {
     display: flex;
-    align-items: stretch;
-    /* Ensures all cards have the same height */
-    justify-content: center;
-    gap: 5%;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between; /* Distribute space evenly */
     margin-top: 2%;
     margin-bottom: 5%;
+}
+
+.card-custom {
+    flex: 1; /* Makes sure both cards take equal width */
+    max-width: 100%; /* Prevents exceeding container width */
 }
 
 .text-start {
@@ -321,6 +329,7 @@ body {
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23c8f5b5' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 .navbar-toggler:focus{
   box-shadow: none;
 }
@@ -328,25 +337,6 @@ body {
 
 /* Media query for screens smaller than 768px (adjust as needed) */
 @media (max-width: 768px) {
-    .phone-container {
-        flex-direction: column;
-        /* Stacks images vertically */
-        align-items: center;
-        /* Centers images horizontally */
-    }
-    
-    #left_phone {
-        width: 80%;
-        /* Decreased width for smaller screens */
-        padding-left: 0%;
-    }
-
-    #right_phone {
-        width: 80%;
-        /* Decreased width for smaller screens */
-        padding-right: 0%;
-    }
-
     #title {
         margin-left: 2%;
         margin-right: 2%;
