@@ -305,6 +305,10 @@ body {
         /* Centers images horizontally */
     }
 
+    .card-custom {
+        margin-bottom: 5%;
+    }
+
     #left_phone {
         width: 80%;
         /* Decreased width for smaller screens */
