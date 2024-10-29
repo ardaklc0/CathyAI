@@ -118,6 +118,56 @@ body {
     border: none;
 }
 
+.modal-header, .modal-body, .modal-footer {
+    background-color: #003d3d;
+    border-width: 0px;
+    color: #d4ffca;
+}
+
+.form-control {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    color: #003d3d;
+    background-color: #f5f0e8;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    color: #003d3d;
+    background-color: #f5f0e8;
+}
+
+#submit-join, #close-join {
+    background-color: #00ff57;
+    color: #003d3d;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+}
+
+#submit-join:hover, #close-join:hover {
+    background-color: #c8f5b5;
+    color: #000000;
+}
+
+#submit-contactus, #close-contactus {
+    background-color: #00ff57;
+    color: #003d3d;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+}
+
+#submit-contactus:hover, #close-contactus:hover {
+    background-color: #c8f5b5;
+    color: #000000;
+}
+
+
 .signup {
     font-size: 1.5rem;
     font-weight: regular;

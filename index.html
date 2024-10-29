@@ -18,7 +18,51 @@
 </head>
 
 <body style="font-family: 'schrift', sans-serif;">
-    
+    <div id="joinModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Join us!</h5>
+            </div>
+            <div class="modal-body">
+            <form id="form-join" class="form-group">
+                <input type="text" class="form-control mb-1" id="name-join" placeholder="Name...">
+                <input type="text" class="form-control mb-1" id="surname-join" placeholder="Surname...">
+                <input type="email" class="form-control" id="email-join" placeholder="Email...">
+                <input type="password" class="form-control mt-1" id="password-join" placeholder="Password...">
+                <input type="password" class="form-control mt-1" id="confirmPassword-join" placeholder="Confirm Password...">
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button id="submit-join" type="button" class="btn btn-primary">Submit</button>
+              <button id="close-join" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="contactusModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Contact Us!</h5>
+            </div>
+            <div class="modal-body">
+            <form id="form-contactus" class="form-group">
+                <input type="text" class="form-control mb-1" id="name-contactus" placeholder="Name...">
+                <input type="text" class="form-control mb-1" id="surname-contactus" placeholder="Surname...">
+                <input type="email" class="form-control" id="email-contactus" placeholder="Email...">
+                <input type="text" class="form-control mt-1" id="company-contactus" placeholder="Company...">
+                <input type="text" class="form-control mt-1" id="phone-contactus" placeholder="Phone...">
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button id="submit-contactus" type="button" class="btn btn-primary">Submit</button>
+              <button id="close-contactus" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <nav class="navbar sticky-top navbar-light navbar-expand-sm bg-light px-2">
         <a href="#" class="navbar-brand">CathyAI</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuItems" aria-controls="menuItems" aria-expanded="false" aria-label="Toggle Navigation">
@@ -73,7 +117,7 @@
                 <div class="card-custom p-4">
                     <h4 class="offer-card-title">Individual Plan</h4>
                     <h2 class="my-3 price-info">$5</h2>
-                    <button class="btn btn-custom mb-4 signup">Join Now!</button>
+                    <button id="join" class="btn btn-custom mb-4 signup">Join Now!</button>
                     <ul class="text-start" style="padding-left: 20px;">
                         <li>One-time payment</li>
                         <li>Get your daily reminder every night at 8 p.m. for unlimited time.</li>
@@ -84,7 +128,7 @@
                 <div class="card-custom p-4">
                     <h4 class="offer-card-title">Enterprise Plan</h4>
                     <h2 class="my-3 price-info">For your team</h2>
-                    <button class="btn btn-custom mb-4 signup">Contact Us!</button>
+                    <button id="contactus" class="btn btn-custom mb-4 signup">Contact Us!</button>
                     <ul class="text-start" style="padding-left: 20px;">
                         <li>If you're considering to purchase Cathy.AI for your team (10+ people) contact us for special pricing and assistance.</li>
                     </ul>

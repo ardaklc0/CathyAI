@@ -20,6 +20,30 @@ $(document).ready(function() {
     //     }
     // }
     // );
+    $('#joinModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    });
+    $('#join').on('click', function() {
+        $('#joinModal').modal('show');
+    });
+    $('#close-join').on('click', function() {
+        $('#joinModal').modal('hide');
+    });
+    $('#submit-join').on('click', function() {
+        $('#joinModal').modal('hide');
+    });
+    $('#contactusModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    });
+    $('#contactus').on('click', function() {
+        $('#contactusModal').modal('show');
+    });
+    $('#close-contactus').on('click', function() {
+        $('#contactusModal').modal('hide');
+    });
+    $('#submit-contactus').on('click', function() {
+        $('#contactusModal').modal('hide');
+    });
 });
 
 $('#about').click(function() {
