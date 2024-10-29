@@ -94,9 +94,6 @@ body {
 
 .card-custom {
     flex: 1;
-    /* Allows the card to grow and fill available space */
-    min-height: 100%;
-    /* Sets a minimum height to ensure consistency */
     border-radius: 30px;
     background-color: #003d3d;
     color: #d4ffca;
@@ -334,7 +331,6 @@ body {
     .testimonial-section {
         margin-left: 2%;
         margin-right: 2%;
-        margin-top: 5%;
     }
 
     .faq-section {
