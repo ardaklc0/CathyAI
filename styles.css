@@ -139,7 +139,7 @@ body {
     background-color: #f5f0e8;
 }
 
-#submit-join, #close-join {
+#submit-join {
     background-color: #00ff57;
     color: #003d3d;
     border-radius: 30px;
@@ -148,12 +148,28 @@ body {
     border: none;
 }
 
+#close-join, #close-contactus {
+    background-color: #00ff57;
+    color: #003d3d;
+    border: none;
+    border-radius: 50%;        /* Makes the button circular */
+    width: 40px;               /* Adjust size as needed */
+    height: 40px;              /* Adjust size as needed */
+    font-size: 20px;           /* Adjust font size of X */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    font-size: 2rem;
+}
+
 #submit-join:hover, #close-join:hover {
     background-color: #c8f5b5;
     color: #000000;
 }
 
-#submit-contactus, #close-contactus {
+#submit-contactus {
     background-color: #00ff57;
     color: #003d3d;
     border-radius: 30px;

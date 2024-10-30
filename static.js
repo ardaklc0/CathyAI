@@ -10,6 +10,9 @@ $(document).ready(function() {
         $('#right_phone').css('width', '100%');
         //hide second phone
         $('#left_phone').hide();
+    } else {
+        $('#phone-contactus-textfield').addClass('ps-1');
+        $('#phone-join-textfield').addClass('ps-1');
     }
     // var docWidth = document.documentElement.offsetWidth;
     // [].forEach.call(
